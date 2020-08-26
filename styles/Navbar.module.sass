@@ -1,0 +1,49 @@
+@use "variables" as var
+    
+.navbar
+    position: fixed
+    z-index: 1000
+    display: flex
+    justify-content: space-between
+    width: 100%
+    height: var.$navbar-height
+    align-items: center
+    background-color: var.$navbar-color
+    @media ( max-width: 700px  )
+        height: var.$navbar-height*2
+        flex-direction: column
+        justify-content: space-evenly
+        
+    
+.navbar__menu
+    display: flex
+
+.navbar__menu__item, .navbar__menu__cta
+    margin-right: 3vw
+
+.navbar__menu__item
+    color: white
+
+.navbar__menu__cta
+    color: var.$cdbrown
+    border-radius: 25px
+    border: 2px solid var.$cdbrown
+    padding: 0 40px 0 40px
+    margin-right: 10vw
+    &:hover
+        background-color: var.$cdbrown
+        color: white
+        border-color: white
+    @media ( max-width: 700px  )
+        margin-right: 0
+
+.navbar__logo
+    margin-left: 7vw
+    height: 9vh
+    width: auto
+    
+
+
+
+
+

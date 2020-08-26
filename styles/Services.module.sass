@@ -1,0 +1,52 @@
+@use "variables" as var
+
+$section-height: 100vh - var.$navbar-height
+
+.services
+    margin-top: var.$navbar-height
+    width: auto
+    height: $section-height
+
+.services__top
+    width: auto
+    height: $section-height/3
+    background-color: black
+    text-align: center
+    h1
+        color: white
+        transform: translateY(30px)
+
+
+.services__top__item
+    width: 33%
+    max-width: 350px
+    display: flex
+    justify-content: center
+
+.services__top__item__img
+    width: 138px
+    height: 138px
+
+.services__bottom
+    width: auto
+    height: $section-height/1.9
+    overflow: hidden
+    background-color: white
+
+.services__bottom__item
+    padding: 50px 15px 0 15px
+    width: 33%
+    max-width: 350px
+    text-align: center
+    h2
+        font-weight: 650
+    h3
+        font-weight: normal 
+
+
+.services__itemcontainer
+    display: flex
+    width: 100%
+    transform: translateY(7.5vh)
+    justify-content: center
+    

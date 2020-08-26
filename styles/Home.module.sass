@@ -1,0 +1,37 @@
+@use "variables" as var
+    
+.banner
+    transform: translateY(var.$navbar-height)
+    display: flex
+    width: 100%
+    height: 88vh
+    background-size: cover
+    background-image: url("/mainbanner.jpg") 
+    background-position: 1% 30%
+    background-color: #222629
+    background-blend-mode: soft-light
+    justify-content: center
+    align-items: center
+
+.banner__content
+    margin-top: -10vh
+    max-width: 550px
+    text-align: center
+    color: white
+    h1
+        font-size: 2.5em
+    h3
+        font-size: 1.2em
+        font-weight: normal
+        margin-bottom: 40px
+
+.banner__content__cta
+    color: white
+    background-color: var.$cdbrown
+    border-radius: 10px
+    border: 1px solid var.$cdbrown
+    padding: 10px 25px 10px 25px
+    &:hover
+        background-color: var.$cdred
+        color: white
+        border-color: var.$cdred
