@@ -5,7 +5,11 @@ function services() {
     return (
         <div className={styles.services}>
             <div className={styles.services__top}>
-                <h1>How We Can Help You</h1>
+                <h1 id="services">How We Can Help You</h1>
+                
+            </div>
+            
+            <div className={styles.services__bottom}>
                 <div className={styles.services__itemcontainer}>
                     <div className={styles.services__top__item}>
                         <img className={styles.services__top__item__img} src="/digitalmarketplace.png" alt="Digital Marketplace Management" />
@@ -17,8 +21,6 @@ function services() {
                         <img className={styles.services__top__item__img} src="/sales.png" alt="Carlton Digital Sales Booster" />
                     </div>
                 </div>
-            </div>
-            <div className={styles.services__bottom}>
                 <div  className={styles.services__itemcontainer}>
                     <div className={styles.services__bottom__item}>
                         <h2>DIGITAL MARKETPLACE MANAGEMENT</h2>

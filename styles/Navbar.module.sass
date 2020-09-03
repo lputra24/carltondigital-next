@@ -14,15 +14,25 @@
         flex-direction: column
         justify-content: space-evenly
         
-    
+.navbar__container
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
 .navbar__menu
     display: flex
+    @media ( max-width: 700px  )
+        width: 100%
 
 .navbar__menu__item, .navbar__menu__cta
     margin-right: 3vw
+    
 
 .navbar__menu__item
     color: white
+    @media ( max-width: 700px  )
+        display: none
 
 .navbar__menu__cta
     color: var.$cdbrown
@@ -35,12 +45,16 @@
         color: white
         border-color: white
     @media ( max-width: 700px  )
-        margin-right: 0
+        margin: 0 0 0 5vw
 
 .navbar__logo
     margin-left: 7vw
     height: 9vh
     width: auto
+    @media ( max-width: 700px  )
+        height: 12vh
+        padding: 20px 0 0px 0
+        align-self: start
     
 
 
